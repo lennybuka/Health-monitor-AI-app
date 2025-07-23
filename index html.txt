@@ -1,0 +1,26 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>AI Health Monitor</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+            background: #f9f9f9;
+        }
+        h2 { color: #2c3e50; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Health Monitor Dashboard</h2>
+        <p><strong>Heart Rate:</strong> {{ data.heart_rate }} bpm</p>
+        <p><strong>Blood Oxygen:</strong> {{ data.blood_oxygen }}%</p>
+        <p><strong>Status:</strong> {{ data.status }}</p>
+    </div>
+</body>
+</html>
