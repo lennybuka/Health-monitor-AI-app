@@ -39,7 +39,6 @@ The system analyzes the data to detect abnormal health patterns and generate act
 ├── health_data.json     # Sample health data
 ├── templates/
 │   └── index.html       # Web interface
-├── static/              # (Optional: CSS/JS assets)
 └── README.md
 
 
