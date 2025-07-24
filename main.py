@@ -1,11 +1,10 @@
-
 from flask import Flask, render_template
 import json
 import os
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def home():
     # Read data from JSON file
     try:
@@ -17,12 +16,10 @@ def home():
         status = data.get('status', 'Unknown')
         
     except FileNotFoundError:
-        # Fallback if JSON file doesn't exist
         heart_rate = 0
         blood_oxygen = 0
         status = 'No Data'
     except json.JSONDecodeError:
-        # Fallback if JSON is invalid
         heart_rate = 0
         blood_oxygen = 0
         status = 'Invalid Data'
