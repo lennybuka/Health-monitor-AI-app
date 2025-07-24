@@ -4,8 +4,11 @@ import os
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods=["GET", "HEAD"])
 def home():
+    return "Hello, Flask on Render!"
+
+
     # Read data from JSON file
     try:
         with open('health_data.json', 'r') as f:
